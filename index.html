@@ -48,6 +48,9 @@
 
     <!-- Responsive CSS -->
     <link rel="stylesheet" href="css/responsive.css">
+    
+<!--     BLUE THEME -->
+<!--    <link rel="stylesheet" href="css/blue-theme.css">-->
 
 
 </head>
@@ -78,6 +81,40 @@
         </div>
     </div>
     <!--/PRELOADER-->
+    
+    <!--HOME-->
+    <section id="home">
+        <!--BACKGROUND VIDEO-->
+        <video id="home-bg-video" poster="video/video.jpg" autoplay loop muted> 
+             <!--  poster works as fallback-->
+            <source src="video/video.mp4" type="video/mp4">
+            <source src="video/video.webm" type="video/webm">
+        </video>
+        
+        <!--OVERLAY-->
+        <div id="home-overlay"></div>
+        
+        <!--CONTENT-->
+        <div id="home-content">
+            <div id="home-content-inner" class="text-center">
+                <h1 id="home-heading">Responsive <span class="colored-text">Design</span> Conference.<br>
+                Get Cozy With The Best In The Business.</h1>
+                <p id="home-text">
+                    Get Early Bird Discount of upto 50% OFF on more than 3 Attendees.
+                </p>
+                <div id="home-btn">
+                    <a href="#about" title="Get Early Bird Access" class="btn btn-general btn-gradient">Get Early Bird Access</a>
+                </div>
+            </div>
+        </div>
+        
+        <!--ARROW DOWN-->
+        <a href="#about" id="arrow-down">
+            <i class="lni-scroll-down"></i>
+        </a>
+    </section>
+    <!--/HOME-->
+    
     <!-- JQuery -->
     <script src="js/jquery.min.js"></script>
 

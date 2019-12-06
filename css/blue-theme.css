@@ -1,0 +1,6 @@
+.colored-text{
+    color: #1a2980;
+}
+.btn-gradient{
+    background-image: linear-gradient(to right, #1a2980 0%, #26d0ce 51%, #1a2980 100%);
+}

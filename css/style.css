@@ -25,6 +25,20 @@ html, body{
     width: 100%;
     height: 100%;
 }
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Raleway',sans-serif;
+}
+p{
+    font-family: 'Montserrat';
+}
+a,
+a:hover,
+a:focus{
+    text-decoration: none;
+}
+section{
+    background: #fff;
+}
 
 /************************************************************************
                             LOADER
@@ -158,7 +172,6 @@ html, body{
 }
 
 @keyframes load{
-/*
     0%{
         opacity: 0;
         transform: translateY(-95px);
@@ -182,42 +195,124 @@ html, body{
     100%{
         opacity: 0;
         transform: translateY(95px);
-    }
-*/
-    0%{
-        opacity: 0;
-        transform: translateY(95px);
-    }
-    15%{
-        opacity: 0;
-        transform: translateY(195px);
-    }
-    30%{
-        opacity: 1;
-        transform: translateY(0);
-    }
-    30%{
-        opacity: 1;
-        transform: translateY(-60px);
-    }
-    70%{
-        opacity: 1;
-        transform: translateY(-30px);
-    }
-    85%{
-        opacity: 0;
-        transform: translateY(-65px);
-    }
-    100%{
-        opacity: 0;
-        transform: translateY(15px);
-    }
+    } 
+}
+
+/************************************************************************
+                            GENERAL BUTTONS SECTION
+************************************************************************/
+
+.btn-general{
+    font-family: 'Raleway', sans-serif;
+    border-radius: 30px;
+    font-size: 13px;
+    text-transform: uppercase;
+    margin: 0 6px;
+    padding: 12px 46px;
+    transition: all .5s;
+}
+.btn-green{
+    color: #fff;
+    background: #5c9320;
+}
+
+.btn-white{
+    color: #212226;
+    background: #fff;
+}
+.btn-green:hover,
+.btn-green:focus,
+.btn-white:hover,
+.btn-white:focus{
+    color: #fff;
+    background-color: #212226;
+}
+
+.btn-gradient{
+    color: #fff;
+    background-size: 200% auto;
+    background-image: linear-gradient(to right, #5c9320 0%, #63c600 51%, #5c9320 100%);
+}
+.btn-gradient:hover,
+.btn-gradient:focus{
+    color: #fff;
+    background-position: right;
 }
 
 
+/************************************************************************
+                            HOME SECTION
+************************************************************************/
 
+#home{
+    height: 100vh;
+    background: none;
+}
+#home-bg-video{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+/*    alternative fallback*/
+    background: url("../video/video.jpg") no-repeat cover;
+}
 
+#home-overlay{
+    background-color: rgba(0,0,0,0.8);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
 
+#home-content{
+    width: 100%;
+    height: 100%;
+    display: table;
+    
+}
+#home-content-inner{
+    display: table-cell;
+    vertical-align: middle;
+}
+#home-heading{
+    color: #fff;
+    font-size: 5rem;
+    font-weight: 100;
+    text-transform: capitalize;
+    margin: 0;
+}
+.colored-text{
+    color: #5c9320;
+    font-weight: 500;
+}
+
+#home-text{
+    color: #fff;
+    font-size: 17px;
+    font-weight: 100;
+    margin: 10px 0 30px 0;
+}
+#arrow-down{
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    color: #fff;
+    font-size: 32px;
+    transform: translateX(-50%);
+    z-index: 1;
+    margin-left: 16px;
+}
+#arrow-down:hover,
+#arrow-down:focus{
+    color: #5c9320;
+}
 
 
 
