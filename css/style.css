@@ -16,3 +16,226 @@
         White:               #fff
         Black:               #000   
 ============================================ */
+
+/************************************************************************
+                            GENERAL
+************************************************************************/
+
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+/************************************************************************
+                            LOADER
+************************************************************************/
+
+.loader{
+    /*Make fullscrean*/
+    width: 100%;
+    height: 100%;
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    
+    background: #5c9320;
+    background: linear-gradient(to right, #5c9320 2%, #63c600 82%);
+    z-index: 9999;
+}
+.loader-inner{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+/*    background: #fff;*/
+    width: 120px;
+    height: 120px;
+/*
+    margin-top: -60px;
+    margin-left: -60px;
+*/
+/*    if we dont know the width then use transform*/
+    transform: translate(-50%, -50%);
+}
+
+.loader span{
+    width: 12px;
+    height: 12px;
+    background: #fff;
+    border-radius: 100%;
+    display: block;
+    position: absolute;
+    animation: load 5s ease-in-out infinite;
+    opacity: 0;
+}
+.loader-blocks{
+    width: 60px;
+    height: 60px;
+}
+.loader span.block-1{
+    animation-delay: 1.06s;
+    left: 0px;
+    top: 0px;
+}
+.loader span.block-2{
+    animation-delay: .97s;
+    left: 16px;
+    top: 0px;
+}
+.loader span.block-3{
+    animation-delay: .88s;
+    left: 32px;
+    top: 0px;
+}
+.loader span.block-4{
+    animation-delay: .79s;
+    left: 48px;
+    top: 0px;
+}
+.loader span.block-5{
+    animation-delay: .7s;
+    left: 0px;
+    top: 16px;
+}
+.loader span.block-6{
+    animation-delay: .61s;
+    left: 16px;
+    top: 16px;
+}
+.loader span.block-7{
+    animation-delay: .52s;
+    left: 32px;
+    top: 16px;
+}
+.loader span.block-8{
+    animation-delay: .43s;
+    left: 48px;
+    top: 16px;
+}
+.loader span.block-9{
+    animation-delay: .34s;
+    left: 0px;
+    top: 32px;
+}
+
+.loader span.block-10{
+    animation-delay: .25s;
+    left: 16px;
+    top: 32px;
+}
+
+.loader span.block-11{
+    animation-delay: .16s;
+    left: 32px;
+    top: 32px;
+}
+.loader span.block-12{
+    animation-delay: .07s;
+    left: 48px;
+    top: 32px;
+}
+.loader span.block-13{
+    animation-delay: -0.02s;
+    left: 0px;
+    top: 48px;
+}
+.loader span.block-14{
+    animation-delay: -.11s;
+    left: 16px;
+    top: 48px;
+}
+.loader span.block-15{
+    animation-delay: -0.22s;
+    left: 32px;
+    top: 48px;
+}
+.loader span.block-16{
+    animation-delay: -.31s;
+    left: 48px;
+    top: 48px;
+}
+
+@keyframes load{
+/*
+    0%{
+        opacity: 0;
+        transform: translateY(-95px);
+    }
+    15%{
+        opacity: 0;
+        transform: translateY(-95px);
+    }
+    30%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+    70%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+    85%{
+        opacity: 0;
+        transform: translateY(95px);
+    }
+    100%{
+        opacity: 0;
+        transform: translateY(95px);
+    }
+*/
+    0%{
+        opacity: 0;
+        transform: translateY(95px);
+    }
+    15%{
+        opacity: 0;
+        transform: translateY(195px);
+    }
+    30%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+    30%{
+        opacity: 1;
+        transform: translateY(-60px);
+    }
+    70%{
+        opacity: 1;
+        transform: translateY(-30px);
+    }
+    85%{
+        opacity: 0;
+        transform: translateY(-65px);
+    }
+    100%{
+        opacity: 0;
+        transform: translateY(15px);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
