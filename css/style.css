@@ -18,7 +18,7 @@
 ============================================ */
 
 /************************************************************************
-                            GENERAL
+                                GENERAL
 ************************************************************************/
 
 html, body{
@@ -31,6 +31,7 @@ h1,h2,h3,h4,h5,h6{
 p{
     font-family: 'Montserrat';
 }
+
 a,
 a:hover,
 a:focus{
@@ -40,162 +41,91 @@ section{
     background: #fff;
 }
 
+
 /************************************************************************
-                            LOADER
+                            LINE ICON SETTING
+************************************************************************/
+[class*='lni-']{
+    display: inline-block;
+}
+
+/* 
+    NOTE: '*' - contains
+          '^' - starts with
+*/
+
+/************************************************************************
+                            HELPER CLASSES
 ************************************************************************/
 
-.loader{
-    /*Make fullscrean*/
-    width: 100%;
-    height: 100%;
-    
-    position: fixed;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    
-    background: #5c9320;
-    background: linear-gradient(to right, #5c9320 2%, #63c600 82%);
-    z-index: 9999;
+.m-10{
+    margin: 10px;
 }
-.loader-inner{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-/*    background: #fff;*/
-    width: 120px;
-    height: 120px;
-/*
-    margin-top: -60px;
-    margin-left: -60px;
-*/
-/*    if we dont know the width then use transform*/
-    transform: translate(-50%, -50%);
+.m-30{
+    margin: 30px;
+}
+.m-50{
+    margin: 50px;
+}
+.m-70{
+    margin: 70px;
+}
+.m-90{
+    margin: 90px;
+}
+.m-100{
+    margin: 100px;
+}
+.m-120{
+    margin: 120px;
 }
 
-.loader span{
-    width: 12px;
-    height: 12px;
-    background: #fff;
-    border-radius: 100%;
-    display: block;
-    position: absolute;
-    animation: load 5s ease-in-out infinite;
-    opacity: 0;
+.m-t-10{
+    margin-top: 10px;
 }
-.loader-blocks{
-    width: 60px;
-    height: 60px;
+.m-t-30{
+    margin-top: 30px;
 }
-.loader span.block-1{
-    animation-delay: 1.06s;
-    left: 0px;
-    top: 0px;
+.m-t-50{
+    margin-top: 50px;
 }
-.loader span.block-2{
-    animation-delay: .97s;
-    left: 16px;
-    top: 0px;
+.m-t-70{
+    margin-top: 70px;
 }
-.loader span.block-3{
-    animation-delay: .88s;
-    left: 32px;
-    top: 0px;
+.m-t-90{
+    margin-top: 90px;
 }
-.loader span.block-4{
-    animation-delay: .79s;
-    left: 48px;
-    top: 0px;
+.m-t-100{
+    margin-top: 100px;
 }
-.loader span.block-5{
-    animation-delay: .7s;
-    left: 0px;
-    top: 16px;
-}
-.loader span.block-6{
-    animation-delay: .61s;
-    left: 16px;
-    top: 16px;
-}
-.loader span.block-7{
-    animation-delay: .52s;
-    left: 32px;
-    top: 16px;
-}
-.loader span.block-8{
-    animation-delay: .43s;
-    left: 48px;
-    top: 16px;
-}
-.loader span.block-9{
-    animation-delay: .34s;
-    left: 0px;
-    top: 32px;
+.m-t-120{
+    margin-top: 120px;
 }
 
-.loader span.block-10{
-    animation-delay: .25s;
-    left: 16px;
-    top: 32px;
+.m-b-10{
+    margin-bottom: 10px;
+}
+.m-b-30{
+    margin-bottom: 30px;
+}
+.m-b-50{
+    margin-bottom: 50px;
+}
+.m-b-70{
+    margin-bottom: 70px;
+}
+.m-b-90{
+    margin-bottom: 90px;
+}
+.m-b-100{
+    margin-bottom: 100px;
+}
+.m-b-120{
+    margin-bottom: 120px;
 }
 
-.loader span.block-11{
-    animation-delay: .16s;
-    left: 32px;
-    top: 32px;
-}
-.loader span.block-12{
-    animation-delay: .07s;
-    left: 48px;
-    top: 32px;
-}
-.loader span.block-13{
-    animation-delay: -0.02s;
-    left: 0px;
-    top: 48px;
-}
-.loader span.block-14{
-    animation-delay: -.11s;
-    left: 16px;
-    top: 48px;
-}
-.loader span.block-15{
-    animation-delay: -0.22s;
-    left: 32px;
-    top: 48px;
-}
-.loader span.block-16{
-    animation-delay: -.31s;
-    left: 48px;
-    top: 48px;
-}
-
-@keyframes load{
-    0%{
-        opacity: 0;
-        transform: translateY(-95px);
-    }
-    15%{
-        opacity: 0;
-        transform: translateY(-95px);
-    }
-    30%{
-        opacity: 1;
-        transform: translateY(0);
-    }
-    70%{
-        opacity: 1;
-        transform: translateY(0);
-    }
-    85%{
-        opacity: 0;
-        transform: translateY(95px);
-    }
-    100%{
-        opacity: 0;
-        transform: translateY(95px);
-    } 
+.m-auto{
+    margin: 0 auto;
 }
 
 /************************************************************************
@@ -239,6 +169,61 @@ section{
     background-position: right;
 }
 
+/************************************************************************
+                            GENERAL HEADING
+************************************************************************/
+.vertical-heading h5,
+.horizontal-heading h5{
+    color: #5c9320;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 500;
+    word-spacing: 9px;
+}
+
+.vertical-heading h5{
+    display: inline-block;
+    transform: rotate(-90deg);
+    position: relative;
+    top: 60px;
+    left: -55px;
+}
+
+.vertical-heading h2,
+.horizontal-heading h2{
+    font-size: 28px;
+    font-weight: 100;
+    line-height: 45px;
+}
+.vertical-heading h2{
+    margin: 0 0 0 35px;
+}
+.highlight-heading{
+    color: #5c9320;
+    font-weight: 700;
+}
+.horizontal-heading h2{
+    margin: 0;
+}
+.horizontal-heading h5{
+    margin-bottom: 5px;
+}
+.horizontal-heading{
+    text-align: center;
+}
+
+/************************************************************************
+                            CONTENT BOX
+************************************************************************/
+.content-box-lg{
+    padding: 120px 0;
+}
+.content-box-md{
+    padding: 100px 0;
+}
+.content-box-sm{
+    padding: 90px 0;
+}
 
 /************************************************************************
                             HOME SECTION
@@ -314,11 +299,253 @@ section{
     color: #5c9320;
 }
 
+/************************************************************************
+                            ABOUT SECTION
+************************************************************************/
 
+#about-02{
+    background: #F4F4F4;
+}
 
+.about-item{
+    background: #FFF;
+    padding: 80px 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
 
+.about-item i{
+    font-size: 42px;
+}
+.about-item h3{
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.about-item hr{
+    width: 45px;
+    background-color: #5c9320;
+    height: 3px;
+    margin: 0 auto 20px auto;
+}
 
+/*HOVER STATE*/
 
+.about-item:hover{
+    background-color: #5c9320;
+    transform-style: preserve-3d;
+    transform: rotateY(180deg);
+}
+.about-item:hover i,
+.about-item:hover p,
+.about-item:hover h3{
+    color: #FFF;
+}
+.about-item:hover hr{
+    background-color: #FFF;
+}
+.about-item:hover i{
+    transform: translateY(-20px);
+}
+
+/*SMOOTH TRANSITION*/
+
+.about-item p,
+.about-item h3{
+    transition: all .4s linear;
+}
+.about-item,
+.about-item hr,
+.about-item i{
+    transition: all .4s ease-in-out;
+}
+
+/************************************************************************
+                            LOADER
+************************************************************************/
+
+.loader{
+    /*Make fullscrean*/
+    width: 100%;
+    height: 100%;
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    
+    background: #5c9320;
+    background: linear-gradient(to right, #5c9320 2%, #63c600 82%);
+    z-index: 9999;
+}
+
+.loader-inner{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+/*    background: #fff;*/
+    width: 120px;
+    height: 120px;
+/*
+    margin-top: -60px;
+    margin-left: -60px;
+*/
+/*    if we dont know the width then use transform*/
+    transform: translate(-50%, -50%);
+}
+
+.loader span{
+    width: 12px;
+    height: 12px;
+    background: #fff;
+    border-radius: 100%;
+    display: block;
+    position: absolute;
+    animation: load 5s ease-in-out infinite;
+    opacity: 0;
+}
+
+.loader-blocks{
+    width: 60px;
+    height: 60px;
+}
+
+.loader span.block-1{
+    animation-delay: 1.06s;
+    left: 0px;
+    top: 0px;
+}
+.loader span.block-2{
+    animation-delay: .97s;
+    left: 16px;
+    top: 0px;
+}
+.loader span.block-3{
+    animation-delay: .88s;
+    left: 32px;
+    top: 0px;
+}
+.loader span.block-4{
+    animation-delay: .79s;
+    left: 48px;
+    top: 0px;
+}
+.loader span.block-5{
+    animation-delay: .7s;
+    left: 0px;
+    top: 16px;
+}
+.loader span.block-6{
+    animation-delay: .61s;
+    left: 16px;
+    top: 16px;
+}
+.loader span.block-7{
+    animation-delay: .52s;
+    left: 32px;
+    top: 16px;
+}
+.loader span.block-8{
+    animation-delay: .43s;
+    left: 48px;
+    top: 16px;
+}
+.loader span.block-9{
+    animation-delay: .34s;
+    left: 0px;
+    top: 32px;
+}
+.loader span.block-10{
+    animation-delay: .25s;
+    left: 16px;
+    top: 32px;
+}
+.loader span.block-11{
+    animation-delay: .16s;
+    left: 32px;
+    top: 32px;
+}
+.loader span.block-12{
+    animation-delay: .07s;
+    left: 48px;
+    top: 32px;
+}
+.loader span.block-13{
+    animation-delay: -0.02s;
+    left: 0px;
+    top: 48px;
+}
+.loader span.block-14{
+    animation-delay: -.11s;
+    left: 16px;
+    top: 48px;
+}
+.loader span.block-15{
+    animation-delay: -0.22s;
+    left: 32px;
+    top: 48px;
+}
+.loader span.block-16{
+    animation-delay: -.31s;
+    left: 48px;
+    top: 48px;
+}
+
+@keyframes load{
+    0%{
+        opacity: 0;
+        transform: translateY(-95px);
+    }
+    15%{
+        opacity: 0;
+        transform: translateY(-95px);
+    }
+    30%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+    70%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+    85%{
+        opacity: 0;
+        transform: translateY(95px);
+    }
+    100%{
+        opacity: 0;
+        transform: translateY(95px);
+    } 
+}
+
+/*
+author: Raj
+@keyframes load{
+    0%{
+        opacity: 0;
+        transform: translateY(-95px);
+    }
+    15%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+    30%{
+        opacity: 1;
+        transform: translateY(-95px);
+    }
+    70%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+    85%{
+        opacity: 1;
+        transform: translateY(-95px);
+    }
+    100%{
+        opacity: 0;
+        transform: translateY(95px);
+    } 
+}
+*/
 
 
 
