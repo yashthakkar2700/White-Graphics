@@ -149,6 +149,9 @@ section{
     margin-bottom: 120px!important;
 }
 
+.m-l-25{
+    margin-left: 25px!important;
+}
 .m-l-10{
     margin-left: 10px!important;
 }
@@ -180,14 +183,55 @@ section{
 .p-b-0{
     padding-bottom: 0px!important;
 }
+.p-b-25{
+    padding-bottom: 25px!important;
+}
+
 .p-b-30{
     padding-bottom: 30px!important;
+}
+.p-b-80{
+    padding-bottom: 80px!important;
 }
 .p-b-100{
     padding-bottom: 100px!important;
 }
+.p-r-0{
+    padding-right: 0px!important;
+}
+.p-r-12{
+    padding-right: 12px!important;
+}
+.p-r-10{
+    padding-right: 10px!important;
+}
+.p-l-0{
+    padding-left: 0px!important;
+}
+.p-l-12{
+    padding-left: 12px!important;
+}
+.p-l-7{
+    padding-left: 7px!important;
+}
 .p-l-10{
-    padding-left: 10px;
+    padding-left: 10px!important;
+}
+.p-l-25{
+    padding-left: 25px!important;
+}
+
+.border-white{
+     border: 1px solid #fff;
+}
+.border-black{
+     border: 1px solid #212226;
+}
+.color-white{
+    color: #fff;
+}
+.color-black{
+    color: #212226;
 }
 
 /************************************************************************
@@ -476,26 +520,28 @@ ul.social-icons li{
     display: inline-block;
 }
 ul.social-icons li a{
-    border: 1px solid #fff;
+   
     display: inline-block;
     width: 35px;
     height: 35px;
     line-height: 35px;
     border-radius: 100%;
-    color: #fff;
     transition: all .3s linear;
 }
 ul.social-icons li.fb-icon a:hover{
     background: #3B5998;
     border-color: transparent;
+    color: #fff;
 }
 ul.social-icons li.twitter-icon a:hover{
     background: #00ACED;
     border-color: transparent;
+    color: #fff;
 }
 ul.social-icons li.google-plus-icon a:hover{
     background: #DD4B39;
     border-color: transparent;
+    color: #fff;
 }
 
 /************************************************************************
@@ -992,6 +1038,45 @@ ul.package li i{
 .blog-card.blog-info span{
     font-size: 7px!important;
     font-weight: 500;
+}
+
+/************************************************************************
+                            CONTACT SECTION
+************************************************************************/
+
+.contact-info{
+    list-style: none;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #212226;
+}
+.contact-info h4{
+    font-weight: 500;
+}
+
+.contact-info li{
+    font-size: 14px;
+    line-height: 2;
+}
+.contact-info li span{
+    font-weight: 100;
+}
+.contact-info li i{
+    font-size: 18px;
+    padding-right: 5px;
+}
+
+.contact-right{
+    box-shadow: 0 0 7.5pt 0 rgba(0,0,0,.1);
+    border-radius: 5px;
+    color: #212226;
+}
+.contact-right h4{
+    margin: 10px 0px;
+}
+#contact textarea{
+    width: 525px;
+    height: 165px;
 }
 
 
